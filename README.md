@@ -1,2 +1,0 @@
-# Slavni-Nezlamni-
-for Anyanya

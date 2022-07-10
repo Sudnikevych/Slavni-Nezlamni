@@ -1,0 +1,226 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 28, 38, 0.476);
+  position: fixed;
+  top: 0;
+  transition: opacity 300ms, visibility 300ms;
+}
+
+.modal {
+  width: 500px;
+  min-height: 600px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms;
+  padding: 40px;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.modal-close-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(255, 108, 0, 0.2);
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.modal-close-btn:hover {
+  fill: #ff6c00;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  .modal-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding-left: 30px;
+  outline: none;
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    color: #303030;
+    font-size: 12px;
+  }
+}
+
+.modal-label {
+  font-size: 12px;
+  color: #9da4bd;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.modal-text {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+}
+.modal-text:focus {
+  border-color: #ff6c00;
+}
+
+.check-text {
+  color: #555555;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #090b13;
+    border-radius: 3px;
+    margin-right: 5px;
+    .modal-check:checked + & {
+      background-color: var(--accent-color);
+      background-image: url(../img/check.svg);
+      border: none;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .modal-check:focus + & {
+      border-color: var(--accent-color);
+    }
+  }
+}
+
+.modal-btn {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-btn-text {
+  font-family: inherit;
+  @include font(700, 16px, 1.88, 0.06em, #303030);
+  text-align: center;
+  transition: color 300ms ease;
+}
+
+.modal-btn:hover .modal-btn-text {
+  color: #ffffff;
+}
+
+// .policy-text {
+//   @include font(null, 12px, 1.16, 0.03em, #303030);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 30px;
+//   &::before {
+//     content: "";
+//     width: 16px;
+//     height: 15px;
+//     border: 2px solid #212121;
+//     border-radius: 3px;
+//     margin-right: 7px;
+//   }
+
+//   .modal-policy:checked + & {
+//     background-color: #ff6c00;
+//     border: none;
+//     background-image: url(../images/check.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+
+//   .modal-policy:focus + & {
+//     border-color: #ff6c00;
+//     @include font(null, 14px, 1.71, 0.03em, #303030);
+//   }
+// }
+
+// .policy-link {
+//   @include font(null, 14px, 1.71, 0.03em, #303030);
+//   text-decoration-line: underline;
+//   margin-left: 5px;
+// }
+
+.policy-text {
+  @include font(null, 12px, 1.71, 0.03em, #303030);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-right: 7px;
+
+    .modal-policy:checked + & {
+      background-color: var(--accent-color);
+      border: none;
+      background-image: url(../images/check.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .modal-policy:focus + & {
+      border-color: var(--accent-color);
+    }
+  }
+}
+
+.policy-link {
+  @include font(null, 14px, 1.71, 0.03em, #303030);
+  text-decoration-line: underline;
+  margin-left: 5px;
+}

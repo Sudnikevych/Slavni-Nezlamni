@@ -1,0 +1,63 @@
+.properties {
+  padding-top: 50px;
+  //   padding-bottom: 45px;
+}
+
+.properties__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.properties__item {
+  width: calc((100% - 90px) / 4);
+
+  &::before {
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &:nth-child(1)::before {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/heart-in-hands.svg);
+  }
+
+  &:nth-child(2)::before {
+    width: 100px;
+    height: 70px;
+    background-image: url(../images/gift-svgrepo-com.svg);
+  }
+
+  &:nth-child(3)::before {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/pet-house-svgrepo-com.svg);
+  }
+
+  &:nth-child(4)::before {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/shirt-clothes-svgrepo-com.svg);
+  }
+}
+
+.properties__title {
+  font-family: "Roboto";
+  @include font(700, 14px, 1.14, 0.03em, var(--first-text-color));
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.properties__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}

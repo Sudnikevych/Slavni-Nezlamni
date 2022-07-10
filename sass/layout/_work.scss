@@ -1,0 +1,38 @@
+.work {
+  padding-top: 45px;
+  padding-bottom: 94px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.work__title {
+  margin-bottom: 50px;
+}
+
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.work__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
+}
+
+.work__pic {
+  position: relative;
+}
+
+.work__text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  @include font(700, 14px, 1.33, 0.03em, #ffffff);
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

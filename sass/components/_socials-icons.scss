@@ -1,0 +1,38 @@
+.masters-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.masters-soc-item:last-child {
+  margin-right: 0;
+}
+
+.masters-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: hwb(25 0% 0% / 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.masters-soc-icon {
+  fill: #303030;
+}
+
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: #ffffff;
+}
+
+.masters-soc-link:hover .masters-soc-icon,
+.masters-soc-link:focus .masters-soc-icon {
+  fill: #ff6c00;
+}

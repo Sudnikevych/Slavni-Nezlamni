@@ -41,6 +41,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -402,7 +407,7 @@
       </section>
 
       <!-- Gallery -->
-      <section class="gallery" id="gallery">
+      <!-- <section class="gallery" id="gallery">
         <div class="container">
           <p class="gallery-top-text top-text">Lorem ipsum dolor sit amet.</p>
           <h2 class="visually-hidden">Gallery</h2>
@@ -441,7 +446,35 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
+      <!-- Slider -->
+      <div class="slider" id="gallery">
+        <div class="container">
+          <p class="slider-top-text top-text">Lorem ipsum dolor sit amet.</p>
+          <h2 class="visually-hidden">Slider-gallery</h2>
+          <ul class="slider-list list">
+            <li class="slider-item"><img src="../images/gallery6.jpeg
+              " alt="" width="270" height="360"></li>
+            <li class="slider-item"><img src="../images/gallery1.jpeg
+              " alt="" width="270" height="360"></li>
+            <li class="slider-item"><img src="../images/gallery2.jpeg
+              " alt="" width="270" height="360"></li>
+            <li class="slider-item"><img src="../images/gallery3.jpeg
+              " alt="" width="270" height="360"></li>
+            <li class="slider-item"><img src="../images/gallery4.jpeg
+              " alt="" width="270" height="360"></li>
+            <li class="slider-item"><img src="/images/mops.peg.jpeg
+              " alt="" width="270" height="360"></li>
+            
+          </ul>
+          <div class="slider-btn">
+          <button type="button" class="slider-btn-prev">&#11164</button>
+            <button type="button" class="slider-btn-next">&#11166</button>
+        </div>
+        </div>
+        </div>
+      </div>
 
       <!-- Online Contacts-->
       <div class="contacts-wrap">
@@ -697,5 +730,16 @@
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

@@ -1,11 +1,13 @@
 .online {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 50px;
+  padding-bottom: 30px;
   width: calc(50% + 15px);
-  padding-right: 40px;
+  padding-right: 20px;
+  padding-left: 30px;
 }
 
 .online-title {
+  font-family: "Bodoni Moda", serif;
   color: var(--main-title-color);
   margin-bottom: 44px;
 }
@@ -29,7 +31,7 @@
   background-color: transparent;
   outline: none;
   transition: border-color 300ms linear;
-  color: rgba(157, 164, 189, 0.6);
+  color: var(--third-text-color);
 }
 
 .online-input:focus {
@@ -53,7 +55,7 @@
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.4);
+  color: var(--third-text-color);
   transition: color 300ms linear, transform 300ms linear;
 }
 

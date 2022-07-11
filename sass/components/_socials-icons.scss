@@ -16,7 +16,8 @@
 .soc-link {
   width: 100%;
   height: 100%;
-  background-color: var(--second-accent-color);
+  background-color: transparent;
+  border: 1px solid var(--second-accent-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -29,7 +30,7 @@
 
 .soc-link:hover,
 .soc-link:focus {
-  background-color: #ffffff;
+  border: none;
 }
 
 .soc-link:hover .soc-icon,

@@ -841,8 +841,8 @@ body {
 }
 
 .masters {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .masters-top-text {
@@ -878,7 +878,7 @@ body {
   position: absolute;
   top: 0;
   color: #ffffff;
-  background-color: rgba(255, 106, 0, 0.5333333333);
+  background-color: rgba(236, 188, 0, 0.7);
   line-height: 1.5;
   padding: 40px;
   height: 100%;

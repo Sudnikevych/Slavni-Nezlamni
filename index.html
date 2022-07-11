@@ -16,6 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
+      rel="stylesheet"
+    />
     <title>Slavni-Nezlamni</title>
     <link
       rel="stylesheet"
@@ -74,7 +80,10 @@
             <p class="hero-top-text top-text">Ukrainian quality</p>
             <h1 class="hero-title">
               Slavni<span class="gradient-ua">&</span>
-              <span class="hero-title-second">Nezlamni</span>
+              <span class="hero-title-second"
+                ><br />
+                Nezlamni</span
+              >
             </h1>
             <p class="hero-bottom-text bottom-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
@@ -161,38 +170,25 @@
       <!-- work -->
       <section class="work">
         <div class="container">
-          <h2 class="work__title title">Lorem ipsum dolor sit amet.</h2>
+          <h2 class="work__title title visually-hidden">
+            Lorem ipsum dolor sit amet.
+          </h2>
           <ul class="work__list list">
             <li class="work__item">
               <div class="work__pic">
-                <img
-                  srcset="./images/box1.jpg 1x, ./images/work1@2x-min.jpg 2x"
-                  src="./images/box1.jpg"
-                  width="370"
-                  alt="руки печатают на клавиатуре"
-                />
+                <img src="../images/mops.jpeg" width="370" alt="mops" />
                 <p class="work__text">Lorem, ipsum dolor.</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__pic">
-                <img
-                  srcset="./images/box2.jpg 1x, ./images/work2@2x-min.jpg 2x"
-                  src="./images/box2.jpg"
-                  width="370"
-                  alt="руки, ноутбук, в одной руке телефон"
-                />
+                <img src="../images/mops1.jpeg" width="370" alt="mops" />
                 <p class="work__text">Lorem, ipsum dolor.</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__pic">
-                <img
-                  srcset="./images/box3.jpg 1x, ./images/work3@2x-min.jpg 2x"
-                  src="./images/box3.jpg"
-                  width="370"
-                  alt="в руках девушки планшет, на планшете отображается цветовая схема"
-                />
+                <img src="../images/mops2.jpeg" width="370" alt="mops" />
                 <p class="work__text">Lorem, ipsum dolor.</p>
               </div>
             </li>
@@ -302,25 +298,45 @@
               quam. Eum quia non aliquam modi perferendis inventore maiores
               reprehenderit ipsam, quisquam architecto.
             </p>
+            <ul class="soc-list list">
+              <li class="soc-item">
+                <a href="" class="soc-link link">
+                  <svg class="soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a href="" class="soc-link link">
+                  <svg class="soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a href="" class="soc-link link">
+                  <svg class="soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a href="" class="soc-link link">
+                  <svg class="soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="owner-list list">
-            <li class="owner-item">
-              <img
-                src="../images/square270.jpg"
-                alt="beard trim"
-                width="270"
-                height="445"
-              />
-            </li>
-            <!-- <li class="owner-item">
-              <img
-                src="./images/img-2-min.jpg"
-                alt="beard trim"
-                width="270"
-                height="445"
-              />
-            </li> -->
-          </ul>
+          <div class="owner-photo">
+            <img
+              src="../images/photo.jpg"
+              alt="owner-photo"
+              width="500"
+              height="500"
+            />
+          </div>
         </div>
       </section>
 
@@ -483,14 +499,12 @@
       <!-- Gallery -->
       <section class="gallery">
         <div class="container">
-          <p class="gallery-top-text top-text">
-            In Latin "barba" means "beard"
-          </p>
+          <p class="gallery-top-text top-text">Lorem ipsum dolor sit amet.</p>
           <h2 class="visually-hidden">Gallery</h2>
           <ul class="gallery-list list">
             <li class="gallery-item">
               <img
-                src="./images/Rectangle25-min.jpg"
+                src="./images/gallery1.jpeg"
                 alt="master's work"
                 width="270"
                 height="360"
@@ -498,7 +512,7 @@
             </li>
             <li class="gallery-item">
               <img
-                src="./images/Rectangle26-min.jpg"
+                src="./images/gallery2.jpeg"
                 alt="master's work"
                 width="270"
                 height="360"
@@ -506,7 +520,7 @@
             </li>
             <li class="gallery-item">
               <img
-                src="./images/Rectangle27-min.jpg"
+                src="./images/gallery3.jpeg"
                 alt="master's work"
                 width="270"
                 height="360"
@@ -514,7 +528,7 @@
             </li>
             <li class="gallery-item">
               <img
-                src="./images/Rectangle28-min.jpg"
+                src="./images/gallery4.jpeg"
                 alt="master's work"
                 width="270"
                 height="360"
@@ -575,7 +589,7 @@
             <h2 class="contacts-title title">Contacts</h2>
             <address class="contacts-address">
               <ul class="contacts-list list">
-                <li class="contacts-item">
+                <!-- <li class="contacts-item">
                   <a
                     href="https://goo.gl/maps/9fWFHj3suLBgGQRa7"
                     target="_blank"
@@ -587,7 +601,7 @@
                     </svg>
                     Vasilkovaya str, 7А Kyiv, 08132</a
                   >
-                </li>
+                </li> -->
                 <li class="contacts-item">
                   <a href="tel:+380441111111" class="contacts-link link"
                     ><svg class="contacts-icon" width="24" height="24">
@@ -601,7 +615,7 @@
                     ><svg class="contacts-icon qwe" width="24" height="24">
                       <use href="./images/icons.svg#icon-mail"></use>
                     </svg>
-                    barbershop@email.com</a
+                    Slavni-Nezlamni@email.com</a
                   >
                 </li>
               </ul>

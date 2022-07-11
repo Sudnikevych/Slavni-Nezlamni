@@ -50,7 +50,7 @@
       rgba(4, 42, 94, 0.2),
       rgba(236, 189, 0, 0.2)
     ),
-    url(/images/hero-bg.jpeg);
+    url(../images/hero-bg.jpeg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -65,8 +65,8 @@
 }
 
 .hero-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 72px;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 90px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--first-accent-color);

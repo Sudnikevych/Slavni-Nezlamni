@@ -1,6 +1,6 @@
 .contacts-wrap {
-  background-color: #191c26;
-  background-image: url(../images/contacts-bg.png);
+  background-color: #212121;
+  // background-image: url(../images/contacts-bg.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: calc(50% - 15px);
@@ -44,11 +44,11 @@
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #ff6c00;
+  color: var(--second-accent-color);
 }
 
 .contacts-link:hover .contacts-icon {
-  fill: #ff6c00;
+  fill: var(--second-accent-color);
 }
 .contacts-subtitle {
   font-weight: 600;

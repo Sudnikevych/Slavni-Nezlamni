@@ -65,6 +65,7 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
 }
 
 .title {
@@ -85,6 +86,7 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   border: 1px solid var(--second-accent-color);
+  box-shadow: inset 0 0 10px 5px rgba(236, 189, 0, 0.482);
   background-color: transparent;
   border-radius: 30px;
   transition: background-color 300ms ease;
@@ -139,8 +141,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  border: 1px solid var(--second-accent-color);
   border-radius: 50%;
+  box-shadow: inset 0 0 10px 5px rgba(163, 163, 163, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,6 +155,7 @@ body {
 .soc-link:hover,
 .soc-link:focus {
   border: none;
+  box-shadow: none;
 }
 
 .soc-link:hover .soc-icon,
@@ -308,7 +311,6 @@ body {
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   width: 100%;
   padding-top: 15px;
@@ -362,8 +364,12 @@ body {
   margin-right: 15px;
 }
 
-.hero .container {
-  display: flex;
+.hero-logo {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 15px 6px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0px 0px 15px 6px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0px 0px 15px 6px rgba(255, 255, 255, 0.3) inset;
+  border-radius: 30px;
 }
 
 .hero-link {
@@ -408,12 +414,11 @@ body {
 }
 
 .hero-content {
-  background-color: #303030;
   background-image: linear-gradient(to left, rgba(4, 42, 94, 0), rgba(236, 189, 0, 0.3)), url(../images/hero-bg.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 200px 96px 80px 96px;
+  padding: 50px 50px 20px 80px;
   flex-grow: 1;
 }
 
@@ -433,12 +438,6 @@ body {
 
 .hero-title-second {
   color: var(--second-accent-color);
-}
-
-.gradient-ua {
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #04295e 25%, #ecbc00 75%);
 }
 
 .hero-bottom-text {

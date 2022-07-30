@@ -1,5 +1,9 @@
-.hero .container {
-  display: flex;
+.hero-logo {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 15px 6px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0px 0px 15px 6px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0px 0px 15px 6px rgba(255, 255, 255, 0.3) inset;
+  border-radius: 30px;
 }
 
 .hero-link {
@@ -44,7 +48,7 @@
 }
 
 .hero-content {
-  background-color: #303030;
+  // background-color: #757575;
   background-image: linear-gradient(
       to left,
       rgba(4, 42, 94, 0),
@@ -55,7 +59,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 200px 96px 80px 96px;
+  padding: 50px 50px 20px 80px;
   flex-grow: 1;
 }
 
@@ -75,12 +79,6 @@
 
 .hero-title-second {
   color: var(--second-accent-color);
-}
-
-.gradient-ua {
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #04295e 25%, #ecbc00 75%);
 }
 
 .hero-bottom-text {
